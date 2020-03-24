@@ -1,7 +1,6 @@
 :root {
   --normHexColor: #EBB00E;
   --specHexColor: #000;
-  --wordColor: #123C69;
 }
 
 * {
@@ -53,15 +52,12 @@ body {
 }
 
 .scoring {
-  background: url('images/background.jpg');
-  background-size: contain;
-  border-radius: 20px;
   margin-top: 20px;
   margin-left: 2px;
   display: inline-block;
   height: 500px;
   width: 49%;
-  border: 5px solid black;
+  border-left: 1px solid black;
   overflow: auto;
 }
 
@@ -145,7 +141,7 @@ body {
   width: 40%;
   margin: 5px 25px;
   border-bottom: 1px solid var(--specHexColor);
-  color: var(--wordColor);
+  color: var(--normHexColor);
   font-weight: bold;
 }
 
