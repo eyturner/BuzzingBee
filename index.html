@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Buzzing Bee!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="header">
+    <h1>Buzzing Bee</h1>
+    <h2></h2>
+  </div>
+  <div id="container">
+    <div class="honeycomb-container">
+      <div class="input">
+        <input style="text-transform: uppercase;" id="userInput">
+      </div>
+      <div class="honeycomb">
+        <div class="hex top">
+          <div class="left"></div>
+          <div class="middle" id="0"></div>
+          <div class="right"></div>
+        </div>
+        <div class="hex-row">
+          <div class="hex">
+            <div class="left"></div>
+            <div class="middle" id="1"></div>
+            <div class="right"></div>
+          </div>
+          <div class="hex even">
+            <div class="left special"></div>
+            <div class="middle special" id="6"></div>
+            <div class="right special"></div>
+          </div>
+          <div class="hex">
+            <div class="left"></div>
+            <div class="middle" id="2"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="hex-row">
+          <div class="hex">
+            <div class="left"></div>
+            <div class="middle" id="3"></div>
+            <div class="right"></div>
+          </div>
+          <div class="hex even">
+            <div class="left"></div>
+            <div class="middle" id="4"></div>
+            <div class="right"></div>
+          </div>
+          <div class="hex">
+            <div class="left"></div>
+            <div class="middle" id="5"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+      <div id="buttonDiv">
+        <div id="del" class="btn">Delete</div>
+        <div id="shuf" class="btn">Shuffle</div>
+        <div id="ent" class="btn">Enter</div>
+      </div>
+    </div>
+    <div class="scoring">
+      <div id="scoreRank">
+        <p id="rank"></p>
+        <p id="score"></p>
+      </div>
+      <div id="previousWords">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
