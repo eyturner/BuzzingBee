@@ -36,7 +36,15 @@ const startGame = (() => {
       }
     });
   });
-
+  
+  let letters = document.querySelectorAll('.middle');
+  letters.forEach((letter) => {
+      letter.addEventListener('click', (e) => {
+      console.log('clicked a letter!');
+      let userInput = getInput();
+      userInput.value += letter.innerHTML;
+      });
+   });
   userInput.addEventListener("keypress", function(e) {
     if (e.which == 13) {
       let userInput = getInput();
